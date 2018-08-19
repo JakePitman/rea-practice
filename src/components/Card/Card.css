@@ -1,0 +1,80 @@
+.card {
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 500px;
+  margin: 10px;
+}
+
+.title {
+  font-size: 2em;
+  height: 110px;
+  margin: 10px 25px;
+}
+
+.author {
+  color: gray;
+  font-weight: lighter;
+  display: inline-block;
+  margin: 10px 25px;
+}
+
+.publishedAt {
+  color: gray;
+  font-weight: lighter;
+  display: inline-block;
+  margin: 10px 25px;
+}
+
+.urlImage {
+  width: 100%;
+  height: 250px;
+}
+
+.description {
+  font-weight: lighter;
+  margin: 10px 25px;
+}
+
+.cardContent {
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 90vw;
+    height: 20vh;
+    flex-direction: row;
+  }
+
+  .title {
+    font-size: 0.7em;
+    margin: 10px;
+    height: 27px;
+  }
+
+  .author {
+    font-size: 0.5em;
+    margin: 5px 5px 5px 10px;
+  }
+
+  .publishedAt {
+    font-size: 0.5em;
+    margin: 5px;
+  }
+
+  .description {
+    font-size: 0.5em;
+    margin: 10px;
+  }
+
+  .imageContainer {
+    width: 40vw;
+    height: 100%;
+  }
+
+  .urlImage {
+    width: inherit;
+    height: 100%;
+  }
+}
